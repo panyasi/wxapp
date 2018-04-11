@@ -1,13 +1,80 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
+    <view class="banner-section">
+        为人才和企业构建可信赖的职业能力度量衡
+    </view>
+    <view class="hotstack-section">
+        <view class="title">热门技能栈</view>
+        <view class="hotstack-list">
+            <view class="hotstack-item">
+                <view class="item-image">
+                    <image src="/images/skill_html5.png"></image>
+                </view>
+                <view class="hotstack-name">HTML5</view>
+            </view>
+            <view class="hotstack-item">
+                <view class="item-image">
+                    <image src="/images/skill_JS.png"></image>
+                </view>
+                <view class="hotstack-name">JS</view>
+                <view class="item-tag">筹备中</view>
+            </view>
+            <view class="hotstack-item">
+                <view class="item-image">
+                    <image src="/images/skill_css.png"></image>
+                </view>
+                <view class="hotstack-name">JavaScrip</view>
+                <view class="item-tag">筹备中</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="skillstack-section">
+        <view class="title">技能栈测评</view>
+        <view class="title-des">技能栈是针对单项技能点的职业能力测评，通过强大的AI智能算法引擎动态收敛式地推题，最终只需作答少数题目就能准确地拼车出你的专业技能水平。</view>
+        <view class="skillstack-list">
+            <view class="skillstack-item">
+                <view class="item-image">
+                    <image src="/images/intro1_icons1.png"></image>
+                </view>
+                <view class="skillstack-des">AI智能推题</view>
+            </view>      
+            <view class="skillstack-item">
+                <view class="item-image">
+                    <image src="/images/intro1_icons2.png"></image>
+                </view>
+                <view class="skillstack-des">20分钟评定</view>
+            </view>
+            <view class="skillstack-item">
+                <view class="item-image">
+                    <image src="/images/intro1_icons3.png"></image>
+                </view>
+                <view class="skillstack-des">准确率高达98%</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="youget-section">
+        <view class="title">你将获得</view>
+        <view class="title-des">最终将向你发一份公正客观的电子技能证书，给出你的测评分数和对应的能力等级。</view>
+        <view class="youget-list">
+            <view class="youget-item">
+                <image src="/images/intro2_icons1.png"></image>
+                <text>测评分数</text>
+            </view>
+            <view class="youget-item">
+                <image src="/images/intro2_icons2.png"></image>
+                <text>技能等级</text>
+            </view>  
+            <view class="youget-item">
+                <image src="/images/intro2_icons3.png"></image>
+                <text>电子证书</text>
+            </view>
+            <view class="youget-item">
+                <image src="/images/intro2_icons4.png"></image>
+                <text>测评报告</text>
+            </view>     
+            <image class="youget-cert" src="/images/cert.png"></image>
+        </view>
+    </view>
 </view>
